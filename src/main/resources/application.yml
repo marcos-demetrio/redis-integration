@@ -1,0 +1,25 @@
+app:
+  datasource:
+    flyway:
+      url: jdbc:postgresql://localhost:5432/pg_mdn_product
+      username: 'postgres'
+      password: 'password'
+
+    postgres:
+      host: localhost
+      port: 5432
+      database: pg_mdn_product
+      username: 'postgres'
+      password: 'password'
+
+    redis:
+      enabled: true
+      host: localhost
+      port: 6379
+
+spring:
+  webflux:
+    base-path: /api/
+
+server:
+  port: 8080
